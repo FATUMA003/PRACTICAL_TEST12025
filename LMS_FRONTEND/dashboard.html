@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+
+    <style>
+        .container-fluid{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar  navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+    <div class="navbar">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="color: white;">
+                <li class="nav-item"><a class="nav-link active" href="#">Library System</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-user.html">Manage Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Manage Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-member.html">Manage Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Book Insurance</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Manage Returns</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle"type="button" data-bs-toggle="dropdown">
+                Account
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="adminDropdown">
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    </nav>
+    <div class="container mt-4">
+    <h5>Welcome to The Library Management Dashboard</h5>
+    
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body bg-primary">
+                <h5 class="card-title">Total Books</h5>
+                <p class="card-text fs-4">1,250</p>
+            </div>
+        </div>
+        
+                
+
+        <div class="col-md-3">
+            <div class="card-text center">
+                <div class="card-body bg-success">
+                <h5>class="card-title">Active Members</h5>
+                <P class="card-text fs-4">550</P>
+                </div> 
+            </div>
+        </div>
+
+
+
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body bg-warning">
+                <h5 class="card-title">Books Issued</h5>
+                <p class="card-text fs-4">320</p>
+                </div>
+            </div>
+        </div>
+
+    
+
+    </div>
+    </div>
+
+    <nav class="navbar  navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="footer" style="align-content: center; color: white;">
+            @ Library Management System All rights reserved.
+         </div>   
+    </div>
+
+    <script src="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
