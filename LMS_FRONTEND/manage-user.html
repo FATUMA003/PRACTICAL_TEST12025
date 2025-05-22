@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage user</title>
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="DataTables/datatables.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav class="navbar  navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+    <div class="navbar">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Library System</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-user.html">Manage Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Manage Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-member.html">Manage Member</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Book Insurance</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Manage Returns</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="adminDropdown" data-bs-toggle="dropdown">
+                Account
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="adminDropdown">
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    </nav>
+
+
+
+    <div class="container">
+        <h2>Manage Users</h2>
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addUserModal">+Add New User</button><br><br>
+        <button>Export to Excel</button>
+
+
+        <table class="table-striped border">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>status</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>Admin</td>
+                    <td>jane@example.com</td>
+                    <td><button class=" btn btn-success">Edit</button></td>
+                    <td><button class=" btn btn-danger">Delete</button></td>
+                    <td><button class=" btn btn-warning">Block</button></td>
+                </tr>
+
+                <tr>
+                    <td>John Smith</td>
+                    <td>Librarian</td>
+                    <td>john@example.com</td>
+                    <td><button class=" btn btn-success">Edit</button></td>
+                    <td><button class=" btn btn-danger">Delete</button></td>
+                    <td><button class=" btn btn-success" width>Activate</button></td>
+                </tr>
+
+                <tr>
+                    <td>Mary Johnson</td>
+                    <td>Member</td>
+                    <td>mary@example.com</td>
+                    <td><button class=" btn btn-success">Edit</button></td>
+                    <td><button class=" btn btn-danger">Delete</button></td>
+                    <td><button class=" btn btn-warning">Block</button></td>
+                </tr>
+            </tbody>
+        </thead>
+
+    </table>
+
+    </div>
+    <nav class="navbar  navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="footer" style="align-content: center; color: white;">
+            @ Library Management System All rights reserved.
+        </div>   
+    </div>
+
+
+    
+    
+
+
+   
+   <script src="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+   <script src="DataTables/datatables.min.js"></script>
+</body>
+</html>
